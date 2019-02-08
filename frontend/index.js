@@ -21,7 +21,8 @@ if(page == "home") {
                 document.cookie = "api_token=" + response.api_token + ";path=/";
                 window.location.replace("list.html");
             } else {
-                console.log("no");
+                let errorBox = document.querySelector(".error");
+                errorBox.innerHTML = "Wrong username or password"
             }
         })
         .catch(error => console.error('Error:', error));
