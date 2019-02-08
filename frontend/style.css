@@ -1,0 +1,65 @@
+body{
+    background: #F0EFE9;
+    font-family: sans-serif;
+}
+
+.content{
+    width: 40%;
+    background: white;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.list div{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #F0EFE9;
+}
+
+.list div p{
+    display: inline-block;
+    margin: 20px 10px 20px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list div span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #FA696A;
+    border-radius: 15px;
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.list div .done{
+    display: inline-block;
+    background-color: #76E9B8;
+    border: 1px solid #76E9B8;
+    border-radius: 20px;
+    width: 40px;
+    float: right;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.list div .done.false{
+    background-color: transparent;
+}
+
+.add{
+    margin-top:10px;
+    border-top: 2px solid black;
+}
+
+.add input{
+    margin-top: 10px;
+    height: 30px;
+    padding: 2px;
+    border: 1px solid #50E3A4;
+}
