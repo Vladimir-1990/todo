@@ -21,6 +21,9 @@ Open the index.js file in the directory 'frontend' and change line 1 to point to
 The REST API has the following endpoints
 
 ```bash
+POST "/login" params:{email : $email, password : $password}
+logs in a user with email/password combination
+
 GET "/items"
 gets a list of items for the logged in user
 
