@@ -27,10 +27,12 @@ Class UserController extends Controller{
              "password" => "required"
         ]);
         $user = $this->user->getByEmail($request->input("email"));
-        if(Hash::check($request->input("password"), $user->password)){
-            $apiToken = bin2hex(random_bytes(16));
-            $this->user->update($user->id, ["api_token"=>$apiToken]);
-            return json_encode(["status" => true, "api_token" => $apiToken]);
+        if($user){
+            if(Hash::check($request->input("password"), $user->password)){
+                $apiToken = bin2hex(random_bytes(16));
+                $this->user->update($user->id, ["api_token"=>$apiToken]);
+                return json_encode(["status" => true, "api_token" => $apiToken]);
+            }
         }
         return json_encode(["status" => false]);
     }
