@@ -16,6 +16,14 @@ Change the .env file inside the API directory to the correct MySQL connection de
 
 Open the index.js file in the directory 'frontend' and change line 1 to point to your local api instance
 
+Open the frontend part as a localhost and login with:
+
+```bash
+sabo-vladimir@hotmail.com:test
+```
+
+You can add more users by inserting more rows into table users
+
 ## Usage
 
 The REST API has the following endpoints
